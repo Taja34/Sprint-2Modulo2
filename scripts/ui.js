@@ -21,6 +21,7 @@ export const printImageEdit = (image) => {
 
        
     printImageEditar.innerHTML += `
+  
     <img src=${image} alt="" class="contanerEditPerfil_foto" >
         `
     ;
@@ -98,6 +99,7 @@ export const pintarNombreContBuscaChat =  (usuario)=>{
 
        
     buscadorNombreChat.innerHTML = `
+    <img src="./img/icons/x.svg" alt="" class="imgLupita">
     <p class="mensajeCon"> Mensaje con ${usuario.name} </p>
         `
 }

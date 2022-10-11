@@ -441,10 +441,15 @@ font-size: 18px;
 
 
 }
+.cien{
+    width: 100%;
+}
+.retroceso{
+    position: absolute;
+    
+}
 @media screen and (max-width: 375px) {
-    .contenedorChat{
-        display: none;
-    }
+   
     .contenedorContactos{
       
         width: 100%;
@@ -453,5 +458,9 @@ font-size: 18px;
     .Todosloscontactos{
         width: 100%;
         font-size: 27px;
+    }
+    .cont-buscadorDePalabra{
+width: 200px;
+position: absolute;
     }
 }

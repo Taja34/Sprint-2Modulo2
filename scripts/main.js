@@ -233,8 +233,7 @@ const handleSerchP =async(e)=>{
 let Mensajes = await buscarPalabra(idUser,idChat,valor);
 console.log(Mensajes)
 await pintarMensajesBuscados(Mensajes)
-Mensajes ='';
-valor='';
+
 }
 
  const handleSerch = async(e) =>{
@@ -251,7 +250,36 @@ printContactos(serch,idUser)
 }}
 
 
+function myFunction(x) {
+  if (x.matches) { // If media query matches
+    let  contenedorChat = document.getElementById('contenedorChat');
+    contenedorChat.classList.add('hidden');
+    contenedorChat.classList.add('cien');
+    document.addEventListener('click',async ({ target }) => {
+      if(target.classList.contains("recuadroDelContacto")){
+      let  contenedorChat = document.getElementById('contenedorChat');
+    contenedorChat.classList.remove('hidden');
+    let  contenedorContactos = document.getElementById('contenedorContactos');
+    contenedorContactos.classList.add('hidden');
+    let retroceso =document.getElementById('retroceso')
+    retroceso.classList.remove('hidden')
 
+    } if(target.classList.contains('retroceso')){
+      let  contenedorChat = document.getElementById('contenedorChat');
+      contenedorChat.classList.add('hidden');
+      let  contenedorContactos = document.getElementById('contenedorContactos');
+    contenedorContactos.classList.remove('hidden');
+    }
+
+    })}
+   else {
+    document.body.style.backgroundColor = "white";
+  }
+}
+
+var x = window.matchMedia("(max-width: 375px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
 
 
  const inputDelChat = new UI('inputDelChat') 

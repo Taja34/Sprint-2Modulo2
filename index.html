@@ -15,7 +15,7 @@
 <body>
     <main>
     <aside class="contenedor">
-        <article class="contenedorContactos">
+        <article class="contenedorContactos" id="contenedorContactos">
 
             <div class="contanerEditPerfil hidden" id ="contanerEditPerfil">
                 <div class="navbar">
@@ -40,7 +40,9 @@ URL
                     <button id="editPerfil"> Edit</button>
                     </form>
                 </div>
-            </div><div class="contenedorPerfilDelosContactos" id="contenedorFotoDePerfil"> </div>
+            </div>
+         
+            <div class="contenedorPerfilDelosContactos" id="contenedorFotoDePerfil"> </div>
             <div class="contenedorInputDeBusqueda">
               <p class="Todosloscontactos"> <b> Todos los Chats </b></p>
                 <div class="contenedorDelContenedorInputDeBusqueda">
@@ -51,19 +53,22 @@ URL
             </form>
             </div> 
             </div>
+           
             <section id="contededorDeContactos">
 
             </section>
             
         </article>
-    
-        <article class="contenedorChat">
-            
+        
+        <article class="contenedorChat" id="contenedorChat">
+            <img src="./img/icons/arrow-left.svg" alt="" class="retroceso hidden" id="retroceso">
             <div class="contenedorPerfilDelChat" id="contenedorPerfilDelChat"> 
             <figure class="lupita"><img src="./img/icons/search.svg" alt="" class="imgLupita" ></figure></div>
             <div class="contenedorDelChat">
                <div class=" ContEditMensajes hidden" id ="ContEditMensajes"> <p class="recuadroEditar" id="recuadroEditar">Editar</p> <p class="recuadroEliminar" id="recuadroEliminar">Eliminar</p></div>
+             
             <section class="chat" id="chat">
+               
                
          
             </section>
