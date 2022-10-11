@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Merriweather:wght@700&family=Roboto:wght@400;500&family=Rubik&display=swap');
+*{
+    font-family: 'Rubik', sans-serif;
+    padding:0;
+    margin: 0%;
+    box-sizing: border-box;
+}
+main{
+    max-width: 1910px;
+    margin: auto;
+}
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    height: 100%;
+    
+}
+.contenedorContactos{
+    position: relative;
+    width: 30%;
+   
+    
+}
+.contenedorPerfilDelosContactos{
+    height: 90px;
+    background-color: #EDEDED;
+    border-right: 2px solid rgb(185, 180, 180);
+}
+.fotosDePerfil{
+    position: relative;
+    margin:20px;
+    margin-top: 15px;
+    width: 60px;
+}
+.contenedorInputDeBusqueda{
+    background-color: #ededed8e;
+    height: max-content;
+    text-align: center;
+    
+    padding-left: 5%;
+    padding-bottom: 10px;
+}
+.contenedorDelContenedorInputDeBusqueda{
+    width: 90%;
+    background-color: rgb(255, 255, 255)
+    ;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 10px;
+    border-radius: 50px;
+    padding-left: 20px;
+    
+
+}
+#inputDeBusquedaEnLosContactos {
+    font-size: 18px;
+    width: 100%;
+    border: none;
+    height: 40px;
+    border-radius: 20px;
+
+    
+}
+#inputDeBusquedaDePalabraChat{
+    font-size: 18px;
+    width: 100%;
+    border: none;
+    height: 40px;
+    border-radius: 20px;
+}
+#contededorDeContactos{
+    overflow-y:unset;
+height: 
+750px;
+    overflow-x: hidden
+}
+.recuadroDelContacto{
+   position: relative;
+    display: flex;
+    align-items: center;
+width: 100%;
+border: 1px solid #EDEDED;
+}
+.infoBasicaDelContacto{
+ 
+width: max-content;
+
+
+
+
+}
+
+.ultimoMensaje{
+    position: absolute;
+
+    left: 130px;
+top: 55px;
+font-size: 18px; 
+}
+.diaEscrito{
+    position: absolute;
+    top: 20px;
+    right: 10%;
+    
+    color: #928e8ee3;
+font-size: 16px;
+}
+.nombreDelContacto{
+    position:absolute;
+    top: 18px;
+    font-size: 22px;
+font-weight: 400;
+width: max-content;
+}
+.contenedorChat{
+    position: relative;
+    width: 70%;
+   
+}
+.contenedorPerfilDelChat{
+    display: flex;
+    width: 100%;
+    height: 90px;
+    background-color: #EDEDED;
+    align-items: center;
+}
+.nombreYEstado{
+    display:flex;
+    flex-direction: column;
+    width: 200px;
+}
+.lupita{
+    margin-right: 2%;
+    width: 90%;
+   display: flex;
+   flex-direction: row-reverse;
+}
+.chat{
+    max-width:100% ;
+    height: 750px;
+   overflow-y: auto;
+   overflow-x: hidden;
+    position: relative;
+}
+.imgenFondoDelChat{
+position: absolute;
+
+
+width: 100%;
+height: 100%;
+top: 2px;
+}
+.contenedorDelChat{
+    position: relative;
+    background-image: url("https://3y3seo1md7o8303qa48ddzzb-wpengine.netdna-ssl.com/wp-content/uploads/2022/03/patron-4-novedades-que-llegan-a-WhatsApp.png");
+}
+.contenedorAbajoDelChat{
+    background-color: #EDEDED;
+    width: 100%;
+    height:95px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.iconos{
+    width:  30px;
+
+}
+#inputDelChat{
+    padding-left: 10px;
+    font-size: 20px;
+    border: none;
+    width: 100%;
+    height: 60px;
+    border-radius: 30px;
+}
+.imgLupita{
+    width: 30px;
+}
+.chulito{
+    position: absolute;
+    left: 100px;
+top: 55px;
+}
+.chulitoMensaje{
+    width: 15px;
+    
+}
+.contenedorMensajeUsuario{
+    position: relative;
+   
+padding-left: 30px;
+padding-top: 20px;
+}
+.mensajeUsuario{
+    padding-left: 10px;
+    padding-top: 10px;
+    border-radius: 1px;
+    padding-right: 10px;
+	width: max-content;
+    padding-bottom: 10px;
+	height: max-content;
+    border-radius: 10px;
+background-color: white;
+border: 1px solid #cecece;
+}
+.mensajeUsuarioChat{
+ 
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 20px;
+}
+.mensajeUsuario2 {
+    position: relative;
+    background-color: #E1F7CB;
+    padding-bottom: 17px; 
+    
+}
+.contanerEditPerfil{
+position: absolute;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    height: 930px;
+    background-color: #fbf8f8;
+    overflow-x: auto;
+}
+.hidden{
+    display: none;
+}
+#form__input{
+    text-align: center;
+width: 90%;
+margin: 0;
+}
+#formInputDeBusquedaEnLosContactos {
+    width: 100%;
+}
+#formInputDeBusquedaDePalabraChat{
+    width: 80%;   
+}
+.flecha{
+    filter: invert(96%) sepia(100%) saturate(12%) hue-rotate(237deg) brightness(103%) contrast(103%);
+
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   gap: 10px;
+   color: #ffffff;
+   padding-left: 10px;
+   font-size: 20px;
+    padding-top: 17%;
+    background-color: #4CB29C;
+    width: 100%;
+    height: 120px;
+    padding-right: 20px;
+}
+.contanerEditPerfil_foto{
+    position: relative;
+    align-items: center;
+   top: 30px ;
+
+    margin: auto;
+
+    border-radius: 100%;
+    width: 180px;
+    height: 180px;
+
+}
+.contanerEditPerfil_nombre{
+  
+  
+    position: relative;
+    top: 80px;
+    width: 100%;
+    height: max-content;
+    background-color: #ffffff;
+    text-align: justify;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.contanerEditPerfil_nombre_tuNombre{
+    color: #737373;
+    margin-bottom: 10px;
+}
+.contanerEditPerfil_nombre_nombre{display: flex;
+justify-content: space-between;
+height: max-content;
+width: 100%;}
+.cont__inputEdit{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 110px;
+    width: 100%;
+    height: max-content;
+}
+.inputEdit{
+display: flex;
+border-radius: 20px;
+border: none;
+background-color: #e5e4e4;
+font-size: 17px;
+padding: 5px 5px;
+width: 100%;
+margin-top: 10px;
+margin-left: 20px;
+}
+.hidden{
+    display: none;
+}
+.urlImage{
+    width: 100px;
+    
+}
+.horaMinutos{
+    position: relative;
+    font-size: 13px;
+    color: #959595;
+    right: 1px;
+}
+.tuerca{
+    width: 10px;
+    position: absolute;
+}
+.ContEditMensajes{
+    position: absolute;
+    margin-left: 40%;
+    width: 200px;
+    height: 100px;
+    background-color: #afb5b4;
+    border-radius: 10px;
+flex-direction: row;
+gap: 20px;
+padding: 5px;
+justify-content: center;
+z-index: 5;
+font-size: 18px;
+}
+.editarOeliminar{
+    background-color: #959595;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-right: 10px; 
+    color: #ffffff;
+    
+}
+.recuadroEditar{
+    border:2px solid  #ffffff;
+    height: max-content;
+    margin-top: 5px;
+    padding: 5px 5px;
+    border-radius: 10px;
+ 
+}
+.recuadroEliminar{
+    border:2px solid  #ffffff;
+    height: max-content;
+    margin-top: 5px;
+    padding: 5px 5px;
+    border-radius: 10px;  
+}
+.azul{
+    filter: invert(49%) sepia(79%) saturate(3019%) hue-rotate(175deg) brightness(102%) contrast(107%);
+}
+.contAño{
+    width: max-content;
+    margin: auto;
+    height: max-content;
+    padding: 10px 10px;
+    background-color: #cbdeda93;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.cont-buscadorDePalabra{
+  
+    position: relative;
+    right: 10px;
+    width: 30%;
+    height: 938px;
+    background-color: #f3f3f3;
+}
+.mensajeCon{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.cont__mensajesBuscados{
+    width: 100%;
+    height: max-content;
+    margin-top: 10px;
+}
+.MensajesBuscados{
+    
+    width: 100%;
+    height: max-content;
+    background-color: #ffffff;
+    border-bottom: 1px solid #cbcecd;
+    border-top: 1px solid #cbcecd;
+    border-radius: 3px;
+
+}
+.contMensajeBuscado{
+    
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    padding: 10px;
+    padding-top: 10px;
+    height: max-content;
+}
+.fechaMensajeBuscado{
+    font-size: 15px;
+    color: #959595;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.MensajeBuscadoP{
+    margin-left: 10px;
+}
+.Todosloscontactos{
+   
+    text-align: justify;
+    width: 0%;
+    font-size: 0px;
+    padding-top: 10px;
+    margin-left: -15px;
+    padding-left: 15px;
+    margin-right: -25px;
+
+    margin-bottom: 10px;
+    height: 50px;
+    background-color: #ffffff;
+
+
+}
+@media screen and (max-width: 375px) {
+    .contenedorChat{
+        display: none;
+    }
+    .contenedorContactos{
+      
+        width: 100%;
+        font-size: 27px;
+    }
+    .Todosloscontactos{
+        width: 100%;
+        font-size: 27px;
+    }
+}

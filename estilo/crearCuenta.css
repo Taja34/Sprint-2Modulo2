@@ -1,0 +1,120 @@
+
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes myAnim2 {
+	0%,
+	100% {
+		transform: rotate(0deg);
+		transform-origin: 50% 50%;
+	}
+
+	10% {
+		transform: rotate(8deg);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: rotate(-10deg);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: rotate(10deg);
+	}
+
+	80% {
+		transform: rotate(-8deg);
+	}
+
+	90% {
+		transform: rotate(8deg);
+	}
+}
+body{
+max-width: 1910px;
+height: 930px;
+margin: auto;
+}
+main{
+    height: 100%;
+    width: 100%;
+    background-image: url("https://3y3seo1md7o8303qa48ddzzb-wpengine.netdna-ssl.com/wp-content/uploads/2022/03/patron-4-novedades-que-llegan-a-WhatsApp.png");
+    padding-top: 300px;
+    padding-left: 40%;
+    padding-right: 40%;
+ 
+
+}
+.contenedorRecuadro{
+text-align: center;
+    
+background-color: #fff;
+    text-align: center;
+
+    width: 100%;
+    height: max-content;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+border: 1px solid rgba(116, 113, 113, 0.193);
+
+animation: myAnim 1s ease 0s 1 normal forwards;
+}
+.candado{
+    width:100px;
+    animation: myAnim2 1s ease 0.5s 1 normal forwards;
+    margin-bottom: 20px;
+}
+input{
+    margin-right: 10%;
+    margin-left: 10%;
+    width: 80%;
+text-align: center;
+    display: flex;
+    background-color: rgba(11, 11, 11, 0.183);
+    border-radius: 30px;
+    border: none;
+    height: 30px;
+    padding-left: 10px;
+    margin-top: 10px;
+    
+  
+}
+button{
+    
+    margin-top: 20px;
+    width: 100px;
+    border: none;
+    border-radius: 30px;
+    height: 30px;
+}
+.textRegistro{
+	margin-top: 10px;
+	color: rgba(147, 145, 145, 0.929);
+}
+a{
+	color: rgb(123, 126, 121);
+}
+@media screen and (max-width: 375px) {
+	main{
+	   padding-left: 10%;
+	   padding-right: 10%;
+	}
+	   
+	
+	
+   }

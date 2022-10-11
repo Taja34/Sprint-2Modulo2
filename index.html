@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilo/style.css">
+    <link rel="icon" href="./img/icons/chat.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/luxon/3.0.4/luxon.min.js" integrity="sha512-XdACFfCJeqqfVU8mvvXReyFR130qjFvfv/PZOFGwVyBz0HC+57fNkSacMPF2Dyek5jqi4D7ykFrx/T7N6F2hwQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
+    <title>Chat</title>
+</head>
+<body>
+    <main>
+    <aside class="contenedor">
+        <article class="contenedorContactos">
+
+            <div class="contanerEditPerfil hidden" id ="contanerEditPerfil">
+                <div class="navbar">
+                   <p> <img src="./img/icons/arrow-left.svg" alt="" class="flecha">
+                Perfil </p>
+                <p class="salirsesion">Salir de la sesion</p>
+                </div>
+                <div class="contanerEditPerfil_foto" id="printImageEdit"></div>
+                <div class="contanerEditPerfil_nombre" id="contanerEditPerfil_nombre_nombre">
+                    <p class="contanerEditPerfil_nombre_tuNombre">Tu nombre</p>
+                    <p class="contanerEditPerfil_nombre_nombre"> Chris <img src="./img/icons/edit-2.svg" alt=""></p> <p>Tu foto de perfil</p>
+                     <p>
+URL  
+                    </p>
+            
+                </div>
+                
+                <div class="cont__inputEdit hidden" id="cont__inputEdit">
+                    <form  id="formEdit">
+                    <input type="search" class="inputEdit" id="Nombre" >
+                    <input type="text" name="" class="inputEdit" id="ImageUrl" >
+                    <button id="editPerfil"> Edit</button>
+                    </form>
+                </div>
+            </div><div class="contenedorPerfilDelosContactos" id="contenedorFotoDePerfil"> </div>
+            <div class="contenedorInputDeBusqueda">
+              <p class="Todosloscontactos"> <b> Todos los Chats </b></p>
+                <div class="contenedorDelContenedorInputDeBusqueda">
+                <img src="./img/icons/search.svg" alt="">
+                <form id="formInputDeBusquedaEnLosContactos">
+                <input type="search" placeholder="Buscar o iniciar un nuevo chat" name="" id="inputDeBusquedaEnLosContactos">
+              
+            </form>
+            </div> 
+            </div>
+            <section id="contededorDeContactos">
+
+            </section>
+            
+        </article>
+    
+        <article class="contenedorChat">
+            
+            <div class="contenedorPerfilDelChat" id="contenedorPerfilDelChat"> 
+            <figure class="lupita"><img src="./img/icons/search.svg" alt="" class="imgLupita" ></figure></div>
+            <div class="contenedorDelChat">
+               <div class=" ContEditMensajes hidden" id ="ContEditMensajes"> <p class="recuadroEditar" id="recuadroEditar">Editar</p> <p class="recuadroEliminar" id="recuadroEliminar">Eliminar</p></div>
+            <section class="chat" id="chat">
+               
+         
+            </section>
+        </div> 
+        <div class="contenedorAbajoDelChat"><figure><img src="./img/icons/smile.svg" alt="" class="iconos"></figure> <figure> <img src="./img/icons/paperclip.svg" alt="" class="iconos"></figure>
+            <form id="form__input">
+        <input type="search" name="" placeholder="Escribe un mensaje" id="inputDelChat">
+    </form>
+    <figure><img src="./img/icons/send.svg" alt="" class="iconos " id="btnEnviar" ></figure></div>
+        </article>
+        <div id="buscadorDePalabra" class="cont-buscadorDePalabra hidden">
+            <div class="buscadorNombreChat" id="buscadorNombreChat"></div>
+            <div class="contenedorDelContenedorInputDeBusqueda">
+                <img src="./img/icons/search.svg" alt="">
+                <form id="formInputDeBusquedaDePalabraChat">
+                <input type="search" placeholder="Buscar Palabra " name="" id="inputDeBusquedaDePalabraChat">
+              
+            </form>
+            <img src="./img/icons/x.svg" alt="" class="x">
+            </div> 
+            <div class="cont__mensajesBuscados" id="cont__mensajesBuscados">
+                
+            </div>
+            </div>
+        </div>
+    </aside>
+    </main>
+    <script src="./scripts/main.js" type="module"></script>
+
+</body>
+</html> 
